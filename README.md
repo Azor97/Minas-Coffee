@@ -1,2 +1,2 @@
 # Minas-Coffee
- Site de estudo de uma loja ficticia de café
+ Site feito usando Bootstrap 5 do curso da Alura.
