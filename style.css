@@ -1,0 +1,111 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    --bege: #E6E0D6;
+    --marrom-escuro: #816D4F;
+    --marrom-claro: #B29463;
+}
+
+input[type=checkbox] {
+    border: 2px solid var(--marrom-claro);
+    box-shadow: none;
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--marrom-claro);
+    border-color: var(--marrom-escuro);
+
+    outline: var(--marrom-claro);
+}
+
+input[type=checkbox]:focus {
+    box-shadow: none;
+    border-color: var(--marrom-escuro);
+}
+
+
+.banner-1 {
+    background-image: url(assets/banner-1.png);
+}
+
+.banner-2 {
+    background-image: url(assets/banner-5.png);
+}
+
+.banner-3 {
+    background-image: url(assets/banner-4.png);
+}
+
+
+.banners {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.botao-padrao {
+    background-color: var(--marrom-claro);
+}
+
+.botao-padrao:hover {
+    background-color: var(--marrom-escuro);
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(255, 255, 255);
+    background-color: var(--marrom-escuro);
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: rgb(255, 207, 135);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(253, 157, 13, 0.25);
+}
+
+.form-range::-webkit-range-thumb {
+    background-color: var(--marrom-escuro);
+}
+
+.form-range::-webkit-range-track {
+    background-color: var(--bege);
+}
+
+.form-range:focus::-webkit-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem rgba(255, 208, 120, 0.25);
+    background-color: var(--marrom-claro);
+}
+
+.form-range::-moz-range-thumb {
+    background-color: var(--marrom-escuro);
+}
+
+.form-range::-moz-range-track {
+    background-color: var(--bege);
+}
+
+.form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem rgba(255, 208, 120, 0.25);
+    background-color: var(--marrom-claro);
+}
+
+
+footer {
+    background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"] {
+    color: white;
+
+    .nav-link,
+    .card-body,
+    .offcanvas,
+    .accordion,
+    .btn {
+        --bs-nav-link-color: white;
+        --bs-card-color: white;
+        --bs-offcanvas-color: white;
+        --bs-body-color: white;
+        --bs-body-color: white;
+    }
+}
